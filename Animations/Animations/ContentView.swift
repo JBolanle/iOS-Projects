@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var animationAmount = 0.0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Button("Tap Me") {
+            withAnimation {
+                animationAmount += 360
+                }
+            }
+        .padding(50)
+        .background(.red)
+        .foregroundColor(.white)
+        .clipShape(Circle())
+        .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 0, z: 0))
         }
-        .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
