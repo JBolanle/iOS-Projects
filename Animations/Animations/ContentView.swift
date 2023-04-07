@@ -9,19 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var animationAmount = 0.0
+    @State private var enabled = true
     
     var body: some View {
         Button("Tap Me") {
-            withAnimation {
-                animationAmount += 360
-                }
-            }
-        .padding(50)
-        .background(.red)
-        .foregroundColor(.white)
-        .clipShape(Circle())
-        .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 0, z: 0))
+            enabled.toggle()
         }
+        .frame(width: 200, height: 200)
+        .background(enabled ? .blue : .red)
+        .foregroundColor(.white)
+    }
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
