@@ -8,24 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var animationAmount = 0.0
-    @State private var enabled = true
+    @State private var isSHowingRed = false
     
     var body: some View {
-        Button("Tap Me") {
-            enabled.toggle()
+        ZStack {
+            Rectangle()
+                .fill(.blue)
+                .frame(width: 200, height: 200)
+            
+            if isSHowingRed {
+                Rectangle()
+                    .fill(.red)
+                    .frame(width: 200, height: 200)
+                    .transition(.pivot)
+            }
         }
-        .frame(width: 200, height: 200)
-        .background(enabled ? .blue : .red)
-        .animation(.default, value: enabled)
-        .foregroundColor(.white)
-        .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
-        .animation(.interpolatingSpring(stiffness: 10, damping: 1), value: enabled)
+        .onTapGesture {
+            withAnimation {
+                isSHowingRed.toggle()
+            }
+        }
     }
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
+    }
+}
+
+struct CornerRotateModifier: ViewModifier {
+    let amount: Double
+    let anchor: UnitPoint
+    
+    func body(content: Content) -> some View {
+        content
+            .rotationEffect(.degrees(amount), anchor: anchor)
+            .clipped()
+    }
+}
+extension AnyTransition {
+    static var pivot: AnyTransition {
+        .modifier(active: CornerRotateModifier(amount: -90, anchor: .topLeading), identity: CornerRotateModifier(amount: 0, anchor: .topLeading))
     }
 }
