@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var user = User()
+    @StateObject var user = User()
     
     
     var body: some View {
@@ -30,7 +30,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-class User {
+class User: ObservableObject {
     @Published var firstName = "Jumoke"
     @Published var lastName = "Bolanle"
 }
