@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var gameIsActive = false
+    @State private var gameIsActive = true
     @State private var multiplyNumBy = 2
     @State private var howManyQuestions = 5
+    @State private var userAnswer = ""
     
     var body: some View {
         NavigationView{
@@ -35,8 +36,13 @@ struct ContentView: View {
                 .navigationTitle("Settings")
             } else {
                 VStack{
-                    Text("Game is not active")
-                    Button("Return to Settings") {
+                    Form{
+                        Text("What is \(multiplyNumBy) x 12")
+                        TextField("Enter your answer: ", text: $userAnswer)
+                            .keyboardType(.decimalPad)
+                        Button("Check Answer") {}
+                    }
+                    Button("End Practice") {
                         gameIsActive = false
                     }
                 }
@@ -44,6 +50,8 @@ struct ContentView: View {
             }
         }
     }
+    
+    
     
 }
 
