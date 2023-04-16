@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var gameIsActive = true
+    @State private var gameIsActive = false
     @State private var multiplyNumBy = 2
-    @State private var howManyQuestions = 0
+    @State private var howManyQuestions = 5
     
     var body: some View {
         NavigationView{
-            if gameIsActive {
+            if gameIsActive == false {
                 Form {
                     Section{
                         Text("Which multiplication table would you like to practice?")
@@ -28,14 +28,23 @@ struct ContentView: View {
                             Text("\(howManyQuestions)")
                         }
                     }
+                    Button("Start Practice") {
+                        gameIsActive = true
+                    }
                 }
-                .navigationTitle("XOR")
+                .navigationTitle("Settings")
             } else {
-                Text("Game is not active")
-                    .navigationTitle("XOR")
+                VStack{
+                    Text("Game is not active")
+                    Button("Return to Settings") {
+                        gameIsActive = false
+                    }
+                }
+                    .navigationTitle("\(multiplyNumBy) Times Table Practice")
             }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
