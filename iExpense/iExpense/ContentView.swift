@@ -15,10 +15,38 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.items) { item in
-                    Text(item.name)
+                Section {
+                    ForEach(expenses.items) { item in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            }
+                            
+                            Spacer()
+                            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                                .foregroundColor(item.amount >= 100 ? .orange : item.amount < 10 ? .blue : .purple)
+                        }
+                    }
+                    .onDelete(perform: removeItems)
                 }
-                .onDelete(perform: removeItems)
+//                Section(header: Text("Business")) {
+//                    ForEach(expenses.items) { item in
+//                        HStack {
+//                            VStack(alignment: .leading) {
+//                                Text(item.name)
+//                                    .font(.headline)
+//                                Text(item.type)
+//                            }
+//
+//                            Spacer()
+//                            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+//                                .foregroundColor(item.amount >= 100 ? .orange : item.amount < 10 ? .blue : .purple)
+//                        }
+//                    }
+//                    .onDelete(perform: removeItems)
+//                }
             }
             .navigationTitle("iExpense")
             .toolbar {
