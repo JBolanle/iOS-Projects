@@ -28,6 +28,8 @@ struct ContentView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 100, height: 100)
+                                    .padding()
+                                    
                                 
                                 VStack {
                                     Text(mission.displayName)
@@ -35,10 +37,18 @@ struct ContentView: View {
                                     Text(mission.formattedLaunchDate)
                                         .font(.caption)
                                 }
+                                .padding(.vertical)
                                 .frame(maxWidth: .infinity)
+                                .background(.lightBackground)
                             }
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.lightBackground)
+                            )
                         }
                     }
+                    .padding([.horizontal, .bottom])
                 }
             }
             .navigationTitle("Moonshot")
