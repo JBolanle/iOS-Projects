@@ -59,5 +59,6 @@ struct MissionTitleView: View {
 struct MissionTitleView_Previews: PreviewProvider {
     static var previews: some View {
         MissionTitleView()
+            .background(.darkBackground)
     }
 }

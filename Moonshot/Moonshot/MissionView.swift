@@ -33,6 +33,9 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
                     
+                    Text("\(mission.formattedLaunchDateFull)")
+                        .padding(.top)
+                    
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(crew, id: \.role) { crewMember in
