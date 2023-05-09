@@ -11,6 +11,7 @@
 		2C0500B22A072DA90029B84F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0500B12A072DA90029B84F /* ContentView.swift */; };
 		2C0500B42A072DAB0029B84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0500B32A072DAB0029B84F /* Assets.xcassets */; };
 		2C0500B72A072DAB0029B84F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0500B62A072DAB0029B84F /* Preview Assets.xcassets */; };
+		2CE06CD82A0AE7BD00B8E5C7 /* ColorCyclingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE06CD72A0AE7BD00B8E5C7 /* ColorCyclingCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2C0500B12A072DA90029B84F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C0500B32A072DAB0029B84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C0500B62A072DAB0029B84F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CE06CD72A0AE7BD00B8E5C7 /* ColorCyclingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2C0500AF2A072DA90029B84F /* DrawingApp.swift */,
 				2C0500B12A072DA90029B84F /* ContentView.swift */,
+				2CE06CD72A0AE7BD00B8E5C7 /* ColorCyclingCircle.swift */,
 				2C0500B32A072DAB0029B84F /* Assets.xcassets */,
 				2C0500B52A072DAB0029B84F /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0500B22A072DA90029B84F /* ContentView.swift in Sources */,
+				2CE06CD82A0AE7BD00B8E5C7 /* ColorCyclingCircle.swift in Sources */,
 				2C0500B02A072DA90029B84F /* DrawingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
