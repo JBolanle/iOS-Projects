@@ -13,6 +13,8 @@
 		2CE06CEF2A10372900B8E5C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE06CEE2A10372900B8E5C7 /* Preview Assets.xcassets */; };
 		2CE06CF82A1037EE00B8E5C7 /* HabitToTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE06CF72A1037EE00B8E5C7 /* HabitToTrack.swift */; };
 		2CE06CFA2A12CD5B00B8E5C7 /* AddNewHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE06CF92A12CD5B00B8E5C7 /* AddNewHabit.swift */; };
+		2CE06CFC2A12D5E100B8E5C7 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE06CFB2A12D5E100B8E5C7 /* HabitDetailView.swift */; };
+		2CE06CFE2A155C6C00B8E5C7 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE06CFD2A155C6C00B8E5C7 /* Bundle-Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		2CE06CEE2A10372900B8E5C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CE06CF72A1037EE00B8E5C7 /* HabitToTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitToTrack.swift; sourceTree = "<group>"; };
 		2CE06CF92A12CD5B00B8E5C7 /* AddNewHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewHabit.swift; sourceTree = "<group>"; };
+		2CE06CFB2A12D5E100B8E5C7 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		2CE06CFD2A155C6C00B8E5C7 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				2CE06CE72A10372200B8E5C7 /* Habittude_Habit_TrackerApp.swift */,
 				2CE06CE92A10372200B8E5C7 /* ContentView.swift */,
+				2CE06CFB2A12D5E100B8E5C7 /* HabitDetailView.swift */,
+				2CE06CFD2A155C6C00B8E5C7 /* Bundle-Decodable.swift */,
 				2CE06CF92A12CD5B00B8E5C7 /* AddNewHabit.swift */,
 				2CE06CF72A1037EE00B8E5C7 /* HabitToTrack.swift */,
 				2CE06CEB2A10372900B8E5C7 /* Assets.xcassets */,
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE06CEA2A10372200B8E5C7 /* ContentView.swift in Sources */,
+				2CE06CFC2A12D5E100B8E5C7 /* HabitDetailView.swift in Sources */,
 				2CE06CE82A10372200B8E5C7 /* Habittude_Habit_TrackerApp.swift in Sources */,
 				2CE06CF82A1037EE00B8E5C7 /* HabitToTrack.swift in Sources */,
 				2CE06CFA2A12CD5B00B8E5C7 /* AddNewHabit.swift in Sources */,
+				2CE06CFE2A155C6C00B8E5C7 /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
