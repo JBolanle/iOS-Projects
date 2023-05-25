@@ -17,9 +17,9 @@ struct ContentView: View {
                     .font(.headline)
                 Text(item.collectionName)
             }
-            .task {
-                await loadData()
         }
+        .task {
+            await loadData()
         }
     }
     
