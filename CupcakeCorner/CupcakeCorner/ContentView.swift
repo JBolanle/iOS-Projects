@@ -8,30 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var username = ""
-    @State private var email = ""
-    
-    var disableForm: Bool {
-        username.count < 5 || email.count < 5
-    }
+    @StateObject var order = Order()
     
     var body: some View {
-        Form {
-            Section {
-                TextField("Username", text: $username)
-                TextField("Email", text: $email)
-            }
-            
-            Section {
-                Button("Create account") {
-                    print("creating account...")
-                }
-            }
-            .disabled(disableForm)
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
         }
+        .padding()
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
