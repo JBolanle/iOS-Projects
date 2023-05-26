@@ -8,12 +8,33 @@
 import SwiftUI
 
 class Order: ObservableObject {
-    static let type = ["Vanilla", "Strawberry", "Red Velvet", "Chocolate", "Banana"]
+    static let types = ["Vanilla", "Strawberry", "Red Velvet", "Chocolate", "Banana"]
     
-    @Published var type = 0
+    @Published var types = 0
     @Published var quantity = 0
     
-    @Published var specialRequestEnabled = false
+    @Published var specialRequestEnabled = false {
+        didSet {
+            if specialRequestEnabled == false {
+                extraFrosting = false
+                addSprinkles = false
+            }
+        }
+    }
+    
     @Published var extraFrosting = false
     @Published var addSprinkles = false
+    
+    @Published var name = ""
+    @Published var streetAddress = ""
+    @Published var city = ""
+    @Published var zip = ""
+    
+    var hasValidAddress: Bool {
+        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+            return false
+        }
+        
+        return true
+    }
 }
