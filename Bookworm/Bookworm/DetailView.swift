@@ -39,9 +39,12 @@ struct DetailView: View {
                     .clipShape(Capsule())
                     .offset(x: -5, y: -5)
             }
+            Text("\(book.date?.formatted(date: .long, time: .omitted) ?? "Today")" )
+            
             Text(book.author ?? "Unknown Author")
                 .font(.title)
                 .foregroundColor(.secondary)
+            
             
             Text(book.review ?? "No Review")
                 .padding()
