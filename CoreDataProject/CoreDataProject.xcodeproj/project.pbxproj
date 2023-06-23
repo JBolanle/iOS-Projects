@@ -15,6 +15,9 @@
 		2C7FDB1E2A43B941003CB23E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FDB1D2A43B941003CB23E /* DataController.swift */; };
 		2C7FDB252A43C4AE003CB23E /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FDB232A43C4AE003CB23E /* Movie+CoreDataClass.swift */; };
 		2C7FDB262A43C4AE003CB23E /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FDB242A43C4AE003CB23E /* Movie+CoreDataProperties.swift */; };
+		2CA8E82C2A463AF40066C182 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8E82A2A463AF40066C182 /* Singer+CoreDataClass.swift */; };
+		2CA8E82D2A463AF40066C182 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8E82B2A463AF40066C182 /* Singer+CoreDataProperties.swift */; };
+		2CA8E82F2A463D4E0066C182 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8E82E2A463D4E0066C182 /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		2C7FDB1D2A43B941003CB23E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2C7FDB232A43C4AE003CB23E /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2C7FDB242A43C4AE003CB23E /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CA8E82A2A463AF40066C182 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2CA8E82B2A463AF40066C182 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CA8E82E2A463D4E0066C182 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 		2C7FDB0B2A426F4D003CB23E /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				2CA8E82A2A463AF40066C182 /* Singer+CoreDataClass.swift */,
+				2CA8E82B2A463AF40066C182 /* Singer+CoreDataProperties.swift */,
 				2C7FDB232A43C4AE003CB23E /* Movie+CoreDataClass.swift */,
 				2C7FDB242A43C4AE003CB23E /* Movie+CoreDataProperties.swift */,
 				2C7FDB0C2A426F4D003CB23E /* CoreDataProjectApp.swift */,
 				2C7FDB0E2A426F4D003CB23E /* ContentView.swift */,
+				2CA8E82E2A463D4E0066C182 /* FilteredList.swift */,
 				2C7FDB1D2A43B941003CB23E /* DataController.swift */,
 				2C7FDB1A2A4270D9003CB23E /* CoreDataProject.xcdatamodeld */,
 				2C7FDB102A426F53003CB23E /* Assets.xcassets */,
@@ -149,10 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA8E82C2A463AF40066C182 /* Singer+CoreDataClass.swift in Sources */,
 				2C7FDB0F2A426F4D003CB23E /* ContentView.swift in Sources */,
+				2CA8E82F2A463D4E0066C182 /* FilteredList.swift in Sources */,
 				2C7FDB1E2A43B941003CB23E /* DataController.swift in Sources */,
 				2C7FDB0D2A426F4D003CB23E /* CoreDataProjectApp.swift in Sources */,
 				2C7FDB252A43C4AE003CB23E /* Movie+CoreDataClass.swift in Sources */,
+				2CA8E82D2A463AF40066C182 /* Singer+CoreDataProperties.swift in Sources */,
 				2C7FDB262A43C4AE003CB23E /* Movie+CoreDataProperties.swift in Sources */,
 				2C7FDB1C2A4270D9003CB23E /* CoreDataProject.xcdatamodeld in Sources */,
 			);
