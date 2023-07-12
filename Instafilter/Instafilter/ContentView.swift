@@ -5,31 +5,29 @@
 //  Created by Jumoke Bolanle on 7/2/23.
 //
 
+import CoreImage
+import CoreImage.CIFilterBuiltins
 import SwiftUI
 
-struct ContentView: View {
-    @State private var showingConfirmation = false
-    @State private var backgroundColor = Color.blue
+
+class ImageSaver: NSObject {
+    func writeToPhotoAlbum(image: UIImage) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+    }
     
+    @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error:  Error?, contextInfo: UnsafeRawPointer) {
+        print("Save finished!")
+    }
+}
+
+struct ContentView: View {
+
     var body: some View {
         VStack {
-            Text("Hello, world!")
-                .frame(width: 300, height: 300)
-                .background(backgroundColor)
-                .onTapGesture {
-                    showingConfirmation = true
-                }
-                .confirmationDialog("Change background", isPresented: $showingConfirmation) {
-                    Button("Red") { backgroundColor = .red }
-                    Button("Green") { backgroundColor = .green }
-                    Button("White") { backgroundColor = .white }
-                    Button("Cancel", role: .cancel) { }
-                } message: {
-                    Text("Select new color")
-                }
+            Text("Hello World")
         }
-        .padding()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
