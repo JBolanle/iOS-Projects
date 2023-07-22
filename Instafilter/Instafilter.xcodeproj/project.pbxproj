@@ -12,6 +12,7 @@
 		2CB8F66A2A52853000965543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8F6692A52853000965543 /* Assets.xcassets */; };
 		2CB8F66D2A52853000965543 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8F66C2A52853000965543 /* Preview Assets.xcassets */; };
 		2CB8F6742A56094000965543 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8F6732A56094000965543 /* ImagePicker.swift */; };
+		2CF7FEBA2A6727530053AAA5 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7FEB92A6727530053AAA5 /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2CB8F66C2A52853000965543 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CB8F6732A56094000965543 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2CB8F6752A581DD900965543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2CF7FEB92A6727530053AAA5 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		2CB8F6642A52852B00965543 /* Instafilter */ = {
 			isa = PBXGroup;
 			children = (
+				2CF7FEB92A6727530053AAA5 /* ImageSaver.swift */,
 				2CB8F6752A581DD900965543 /* Info.plist */,
 				2CB8F6652A52852B00965543 /* InstafilterApp.swift */,
 				2CB8F6672A52852B00965543 /* ContentView.swift */,
@@ -145,6 +148,7 @@
 				2CB8F6742A56094000965543 /* ImagePicker.swift in Sources */,
 				2CB8F6682A52852B00965543 /* ContentView.swift in Sources */,
 				2CB8F6662A52852B00965543 /* InstafilterApp.swift in Sources */,
+				2CF7FEBA2A6727530053AAA5 /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

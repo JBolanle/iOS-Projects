@@ -10,19 +10,10 @@ import CoreImage.CIFilterBuiltins
 import SwiftUI
 
 
-class ImageSaver: NSObject {
-    func writeToPhotoAlbum(image: UIImage) {
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
-    }
-    
-    @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error:  Error?, contextInfo: UnsafeRawPointer) {
-        print("Save finished!")
-    }
-}
-
 struct ContentView: View {
     @State private var image: Image?
     @State private var inputImage: UIImage?
+    @State private var processedImage: UIImage?
     @State private var filterIntensity = 0.5
     @State private var showingImagePicker = false
     @State private var showingFilterSheet = false
@@ -42,6 +33,7 @@ struct ContentView: View {
         if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
             let uiImage = UIImage(cgImage: cgimg)
             image = Image(uiImage: uiImage)
+            processedImage = uiImage
         }
     }
     
@@ -59,7 +51,16 @@ struct ContentView: View {
     }
     
     func save() {
+        guard let processedImage = processedImage else { return }
         
+        let imageSaver = ImageSaver()
+        imageSaver.successHandler = {
+            print("Success! Image saved.")
+        }
+        imageSaver.errorHandler = {
+            print("Oops: \($0.localizedDescription)")
+        }
+        imageSaver.writeToPhotoAlbum(image: processedImage)
     }
 
     var body: some View {
