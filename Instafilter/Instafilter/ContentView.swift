@@ -19,6 +19,8 @@ struct ContentView: View {
     @State private var showingFilterSheet = false
     
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
+    
+    
     let context = CIContext()
     
     func applyProcessing() {
@@ -99,7 +101,7 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button("Save", action: save)
+                Button("Save", action: save).disabled(processedImage == nil)
             }
             .padding()
             .navigationTitle("Instafilter")
