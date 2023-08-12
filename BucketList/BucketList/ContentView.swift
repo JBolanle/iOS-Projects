@@ -5,35 +5,45 @@
 //  Created by Jumoke Bolanle on 7/23/23.
 //
 
-import MapKit
+import LocalAuthentication
 import SwiftUI
 
 struct ContentView: View {
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: -0.12), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+    @State private var isUnlocked = false
 
-    let locations = [
-        Location(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 51.501, longitude: -0.141)), Location(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude: 51.508, longitude: -0.076))
-    ]
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+
+        //check if biometric auth is possible
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // if possible, go ahead and use it
+            let reason = "We need to unluck your data."
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                // auth has no completed
+                if success {
+                    isUnlocked = true
+                } else {
+                    // there's a problem
+                }
+            }
+        } else {
+            // no biometrics
+        }
+    }
 
     var body: some View {
         VStack {
-            Map(coordinateRegion: $mapRegion, annotationItems: locations)
-            { location in
-                MapAnnotation(coordinate: location.coordinate) {
-                    NavigationLink {
-                        Text(location.name)
-                    } label: {
-                        Circle()
-                            .stroke(.red, lineWidth: 3)
-                            .frame(width: 44, height: 44)
-                    }
-                }
+            if isUnlocked {
+                Text("Unlocked")
+            } else {
+                Text("Locked")
             }
-            .navigationTitle("London Explorer")
         }
+        .onAppear(perform: authenticate)
     }
 }
-
 
 
 
