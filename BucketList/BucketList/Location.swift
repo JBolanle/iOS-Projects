@@ -9,9 +9,19 @@ import Foundation
 import MapKit
 
 struct Location: Identifiable, Codable, Equatable {
-    let id: UUID
-    let name: String
-    let description: String
+    var id: UUID
+    var name: String
+    var description: String
     let latitude: Double
     let longitude: Double
+
+    var coordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+
+    static func ==(lhs: Location, rhs: Location) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    static let example = Location(id: UUID(), name: "University of Michigan, Ann Arbor", description: "Go Blue!", latitude: 42.283, longitude: -83.735)
 }
