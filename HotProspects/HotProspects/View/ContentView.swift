@@ -8,54 +8,34 @@
 import SwiftUI
 
 
-@MainActor
-class User: ObservableObject {
-    @Published var name = "Taylor Swift"
-}
-
-@MainActor
-class DelayedUpdater: ObservableObject {
-    var value = 0 {
-        willSet {
-            objectWillChange.send()
-        }
-    }
-
-    init() {
-        for i in 1...10 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)) {
-                self.value += 1
-            }
-        }
-    }
-}
-
-struct EditView: View {
-    @EnvironmentObject var user: User
-
-    var body: some View {
-        TextField("Name", text: $user.name)
-    }
-}
-
-struct DisplayView: View {
-    @EnvironmentObject var user: User
-
-    var body: some View {
-        Text(user.name)
-    }
-}
-
-
 struct ContentView: View {
+    @State private var backgroundColor = Color.red
+
     var body: some View {
-        Image("example")
-            .interpolation(.none)
-            .resizable()
-            .scaledToFit()
-            .frame(maxHeight: .infinity)
-            .background(.black)
-            .ignoresSafeArea()
+        VStack {
+            Text("Hello, World!")
+                .padding()
+                .background(backgroundColor)
+
+            Text("Change Color")
+                .padding()
+                .contextMenu {
+                    Button(role: .destructive) {
+                        backgroundColor = .red
+                    } label: {
+                        Label("Red", systemImage: "checkmark.circle.fill")
+                            .foregroundColor(.red)
+                    }
+
+                    Button("Green") {
+                        backgroundColor = .green
+                    }
+
+                    Button("Blue") {
+                        backgroundColor = .blue
+                    }
+                }
+        }
     }
     
 }
