@@ -10,6 +10,7 @@
 		2C138B392AC25EDE00D844D4 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2C138B382AC25EDE00D844D4 /* SamplePackage */; };
 		2C2FA0522AC37708005A2FB9 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FA0512AC37708005A2FB9 /* ProspectsView.swift */; };
 		2C2FA0542AC37710005A2FB9 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FA0532AC37710005A2FB9 /* MeView.swift */; };
+		2C2FA0562AC37BAC005A2FB9 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FA0552AC37BAC005A2FB9 /* Prospect.swift */; };
 		2CEED6102AAE6F3A001AA209 /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEED60F2AAE6F3A001AA209 /* HotProspectsApp.swift */; };
 		2CEED6122AAE6F3A001AA209 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEED6112AAE6F3A001AA209 /* ContentView.swift */; };
 		2CEED6142AAE6F3C001AA209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEED6132AAE6F3C001AA209 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		2C2FA0512AC37708005A2FB9 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		2C2FA0532AC37710005A2FB9 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		2C2FA0552AC37BAC005A2FB9 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Prospect.swift; path = HotProspects/View/Prospect.swift; sourceTree = SOURCE_ROOT; };
 		2CEED60C2AAE6F3A001AA209 /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CEED60F2AAE6F3A001AA209 /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
 		2CEED6112AAE6F3A001AA209 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		2CEED61D2AAFD6E1001AA209 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C2FA0552AC37BAC005A2FB9 /* Prospect.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2FA0542AC37710005A2FB9 /* MeView.swift in Sources */,
+				2C2FA0562AC37BAC005A2FB9 /* Prospect.swift in Sources */,
 				2C2FA0522AC37708005A2FB9 /* ProspectsView.swift in Sources */,
 				2CEED6122AAE6F3A001AA209 /* ContentView.swift in Sources */,
 				2CEED6102AAE6F3A001AA209 /* HotProspectsApp.swift in Sources */,
