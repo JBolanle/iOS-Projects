@@ -22,7 +22,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Contacted", systemImage: "checkmark.circle")
                 }
-            ProspectsView(filter: .notcontacted)
+            ProspectsView(filter: .notContacted)
                 .tabItem {
                     Label("Not Contacted", systemImage: "questionmark.diamond")
                 }

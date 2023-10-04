@@ -11,16 +11,20 @@ import SwiftUI
 struct ProspectsView: View {
     @EnvironmentObject var prospects: Prospects
 
-    enum FilterType {
-        case none, contacted, notcontacted
-    }
-
-    let filter: FilterType
 
     var body: some View {
 
         NavigationView {
-            Text("People: \(prospects.people.count)")
+            List{
+                ForEach(filteredProspects) { prospect in
+                    VStack(alignment: .leading) {
+                        Text(prospect.name)
+                            .font(.headline)
+                        Text(prospect.emailAddress)
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
                 .navigationTitle(title)
                 .toolbar {
                     Button {
@@ -35,14 +39,32 @@ struct ProspectsView: View {
         }
     }
 
+    enum FilterType {
+        case none, contacted, notContacted
+    }
+
+    let filter: FilterType
+
+
     var title: String {
         switch filter {
         case .none:
             return "Everyone"
         case .contacted:
             return "Contacted"
-        case .notcontacted:
+        case .notContacted:
             return "Not Contacted"
+        }
+    }
+
+    var filteredProspects: [Prospect] {
+        switch filter {
+        case .none:
+            return prospects.people
+        case .contacted:
+            return prospects.people.filter { $0.isContacted }
+        case .notContacted:
+            return prospects.people.filter { !$0.isContacted}
         }
     }
 }
