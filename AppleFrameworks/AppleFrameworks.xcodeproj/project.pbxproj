@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C272AA02AE9CF8F008D0F2E /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C272A9F2AE9CF8F008D0F2E /* WeatherButton.swift */; };
-		2C2A2F592AE17FA90010736F /* WeatherAppSAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A2F582AE17FA90010736F /* WeatherAppSAApp.swift */; };
-		2C2A2F5B2AE17FA90010736F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A2F5A2AE17FA90010736F /* ContentView.swift */; };
-		2C2A2F5D2AE17FB20010736F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A2F5C2AE17FB20010736F /* Assets.xcassets */; };
-		2C2A2F602AE17FB20010736F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A2F5F2AE17FB20010736F /* Preview Assets.xcassets */; };
-		2CFB00652AEB186A007517CE /* WeatherDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00642AEB186A007517CE /* WeatherDayView.swift */; };
-		2CFB006A2AEB1989007517CE /* WeatherDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00692AEB1989007517CE /* WeatherDayViewModel.swift */; };
+		2CFB00782AEB1F50007517CE /* AppleFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00772AEB1F50007517CE /* AppleFrameworksApp.swift */; };
+		2CFB007A2AEB1F50007517CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00792AEB1F50007517CE /* ContentView.swift */; };
+		2CFB007C2AEB1F52007517CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFB007B2AEB1F52007517CE /* Assets.xcassets */; };
+		2CFB007F2AEB1F52007517CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFB007E2AEB1F52007517CE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C272A9F2AE9CF8F008D0F2E /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
-		2C2A2F552AE17FA90010736F /* WeatherAppSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C2A2F582AE17FA90010736F /* WeatherAppSAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppSAApp.swift; sourceTree = "<group>"; };
-		2C2A2F5A2AE17FA90010736F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2C2A2F5C2AE17FB20010736F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C2A2F5F2AE17FB20010736F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2CFB00642AEB186A007517CE /* WeatherDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayView.swift; sourceTree = "<group>"; };
-		2CFB00692AEB1989007517CE /* WeatherDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewModel.swift; sourceTree = "<group>"; };
+		2CFB00742AEB1F50007517CE /* AppleFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CFB00772AEB1F50007517CE /* AppleFrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworksApp.swift; sourceTree = "<group>"; };
+		2CFB00792AEB1F50007517CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CFB007B2AEB1F52007517CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CFB007E2AEB1F52007517CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C2A2F522AE17FA90010736F /* Frameworks */ = {
+		2CFB00712AEB1F50007517CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,104 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C2A2F4C2AE17FA90010736F = {
+		2CFB006B2AEB1F50007517CE = {
 			isa = PBXGroup;
 			children = (
-				2C2A2F572AE17FA90010736F /* WeatherAppSA */,
-				2C2A2F562AE17FA90010736F /* Products */,
+				2CFB00762AEB1F50007517CE /* AppleFrameworks */,
+				2CFB00752AEB1F50007517CE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2C2A2F562AE17FA90010736F /* Products */ = {
+		2CFB00752AEB1F50007517CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C2A2F552AE17FA90010736F /* WeatherAppSA.app */,
+				2CFB00742AEB1F50007517CE /* AppleFrameworks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C2A2F572AE17FA90010736F /* WeatherAppSA */ = {
+		2CFB00762AEB1F50007517CE /* AppleFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2CFB00682AEB193C007517CE /* Models */,
-				2CFB00672AEB1926007517CE /* Buttons */,
-				2CFB00662AEB1909007517CE /* Views */,
-				2C2A2F582AE17FA90010736F /* WeatherAppSAApp.swift */,
-				2C2A2F5C2AE17FB20010736F /* Assets.xcassets */,
-				2C2A2F5E2AE17FB20010736F /* Preview Content */,
+				2CFB00772AEB1F50007517CE /* AppleFrameworksApp.swift */,
+				2CFB00792AEB1F50007517CE /* ContentView.swift */,
+				2CFB007B2AEB1F52007517CE /* Assets.xcassets */,
+				2CFB007D2AEB1F52007517CE /* Preview Content */,
 			);
-			path = WeatherAppSA;
+			path = AppleFrameworks;
 			sourceTree = "<group>";
 		};
-		2C2A2F5E2AE17FB20010736F /* Preview Content */ = {
+		2CFB007D2AEB1F52007517CE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2C2A2F5F2AE17FB20010736F /* Preview Assets.xcassets */,
+				2CFB007E2AEB1F52007517CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2CFB00662AEB1909007517CE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2C2A2F5A2AE17FA90010736F /* ContentView.swift */,
-				2CFB00642AEB186A007517CE /* WeatherDayView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		2CFB00672AEB1926007517CE /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				2C272A9F2AE9CF8F008D0F2E /* WeatherButton.swift */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		2CFB00682AEB193C007517CE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2CFB00692AEB1989007517CE /* WeatherDayViewModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C2A2F542AE17FA90010736F /* WeatherAppSA */ = {
+		2CFB00732AEB1F50007517CE /* AppleFrameworks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C2A2F632AE17FB20010736F /* Build configuration list for PBXNativeTarget "WeatherAppSA" */;
+			buildConfigurationList = 2CFB00822AEB1F52007517CE /* Build configuration list for PBXNativeTarget "AppleFrameworks" */;
 			buildPhases = (
-				2C2A2F512AE17FA90010736F /* Sources */,
-				2C2A2F522AE17FA90010736F /* Frameworks */,
-				2C2A2F532AE17FA90010736F /* Resources */,
+				2CFB00702AEB1F50007517CE /* Sources */,
+				2CFB00712AEB1F50007517CE /* Frameworks */,
+				2CFB00722AEB1F50007517CE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WeatherAppSA;
-			productName = WeatherAppSA;
-			productReference = 2C2A2F552AE17FA90010736F /* WeatherAppSA.app */;
+			name = AppleFrameworks;
+			productName = AppleFrameworks;
+			productReference = 2CFB00742AEB1F50007517CE /* AppleFrameworks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C2A2F4D2AE17FA90010736F /* Project object */ = {
+		2CFB006C2AEB1F50007517CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					2C2A2F542AE17FA90010736F = {
+					2CFB00732AEB1F50007517CE = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 2C2A2F502AE17FA90010736F /* Build configuration list for PBXProject "WeatherAppSA" */;
+			buildConfigurationList = 2CFB006F2AEB1F50007517CE /* Build configuration list for PBXProject "AppleFrameworks" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,45 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 2C2A2F4C2AE17FA90010736F;
-			productRefGroup = 2C2A2F562AE17FA90010736F /* Products */;
+			mainGroup = 2CFB006B2AEB1F50007517CE;
+			productRefGroup = 2CFB00752AEB1F50007517CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C2A2F542AE17FA90010736F /* WeatherAppSA */,
+				2CFB00732AEB1F50007517CE /* AppleFrameworks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C2A2F532AE17FA90010736F /* Resources */ = {
+		2CFB00722AEB1F50007517CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2A2F602AE17FB20010736F /* Preview Assets.xcassets in Resources */,
-				2C2A2F5D2AE17FB20010736F /* Assets.xcassets in Resources */,
+				2CFB007F2AEB1F52007517CE /* Preview Assets.xcassets in Resources */,
+				2CFB007C2AEB1F52007517CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C2A2F512AE17FA90010736F /* Sources */ = {
+		2CFB00702AEB1F50007517CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFB00652AEB186A007517CE /* WeatherDayView.swift in Sources */,
-				2C2A2F5B2AE17FA90010736F /* ContentView.swift in Sources */,
-				2C272AA02AE9CF8F008D0F2E /* WeatherButton.swift in Sources */,
-				2C2A2F592AE17FA90010736F /* WeatherAppSAApp.swift in Sources */,
-				2CFB006A2AEB1989007517CE /* WeatherDayViewModel.swift in Sources */,
+				2CFB007A2AEB1F50007517CE /* ContentView.swift in Sources */,
+				2CFB00782AEB1F50007517CE /* AppleFrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2C2A2F612AE17FB20010736F /* Debug */ = {
+		2CFB00802AEB1F52007517CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		2C2A2F622AE17FB20010736F /* Release */ = {
+		2CFB00812AEB1F52007517CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,14 +264,14 @@
 			};
 			name = Release;
 		};
-		2C2A2F642AE17FB20010736F /* Debug */ = {
+		2CFB00832AEB1F52007517CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherAppSA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleFrameworks/Preview Content\"";
 				DEVELOPMENT_TEAM = MPC7JG3E93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -321,7 +285,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.jumoke.WeatherAppSA;
+				PRODUCT_BUNDLE_IDENTIFIER = io.jumoke.AppleFrameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,14 +293,14 @@
 			};
 			name = Debug;
 		};
-		2C2A2F652AE17FB20010736F /* Release */ = {
+		2CFB00842AEB1F52007517CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherAppSA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleFrameworks/Preview Content\"";
 				DEVELOPMENT_TEAM = MPC7JG3E93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -350,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.jumoke.WeatherAppSA;
+				PRODUCT_BUNDLE_IDENTIFIER = io.jumoke.AppleFrameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C2A2F502AE17FA90010736F /* Build configuration list for PBXProject "WeatherAppSA" */ = {
+		2CFB006F2AEB1F50007517CE /* Build configuration list for PBXProject "AppleFrameworks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C2A2F612AE17FB20010736F /* Debug */,
-				2C2A2F622AE17FB20010736F /* Release */,
+				2CFB00802AEB1F52007517CE /* Debug */,
+				2CFB00812AEB1F52007517CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C2A2F632AE17FB20010736F /* Build configuration list for PBXNativeTarget "WeatherAppSA" */ = {
+		2CFB00822AEB1F52007517CE /* Build configuration list for PBXNativeTarget "AppleFrameworks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C2A2F642AE17FB20010736F /* Debug */,
-				2C2A2F652AE17FB20010736F /* Release */,
+				2CFB00832AEB1F52007517CE /* Debug */,
+				2CFB00842AEB1F52007517CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C2A2F4D2AE17FA90010736F /* Project object */;
+	rootObject = 2CFB006C2AEB1F50007517CE /* Project object */;
 }
