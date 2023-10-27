@@ -18,6 +18,7 @@
 		2CFB00962AEB3622007517CE /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00952AEB3622007517CE /* FrameworkGridViewModel.swift */; };
 		2CFB00982AEB4B75007517CE /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00972AEB4B75007517CE /* SafariView.swift */; };
 		2CFB009A2AEB50F3007517CE /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00992AEB50F3007517CE /* XDismissButton.swift */; };
+		2CFB00A22AEB574E007517CE /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB00A12AEB574E007517CE /* FrameworkListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2CFB00952AEB3622007517CE /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		2CFB00972AEB4B75007517CE /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		2CFB00992AEB50F3007517CE /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		2CFB00A12AEB574E007517CE /* FrameworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		2CFB009B2AEB5309007517CE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2CFB00A02AEB572C007517CE /* FrameworkListView */,
 				2CFB009E2AEB537B007517CE /* FrameworkDetailView */,
 				2CFB009C2AEB5314007517CE /* FrameworkGridView */,
 			);
@@ -150,6 +153,14 @@
 				2CFB00972AEB4B75007517CE /* SafariView.swift */,
 			);
 			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		2CFB00A02AEB572C007517CE /* FrameworkListView */ = {
+			isa = PBXGroup;
+			children = (
+				2CFB00A12AEB574E007517CE /* FrameworkListView.swift */,
+			);
+			path = FrameworkListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				2CFB00782AEB1F50007517CE /* AppleFrameworksApp.swift in Sources */,
 				2CFB00982AEB4B75007517CE /* SafariView.swift in Sources */,
 				2CFB00902AEB3033007517CE /* AFButton.swift in Sources */,
+				2CFB00A22AEB574E007517CE /* FrameworkListView.swift in Sources */,
 				2CFB00962AEB3622007517CE /* FrameworkGridViewModel.swift in Sources */,
 				2CFB008E2AEB28A0007517CE /* FrameworkTitleView.swift in Sources */,
 			);
