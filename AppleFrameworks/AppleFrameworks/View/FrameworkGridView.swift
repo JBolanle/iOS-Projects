@@ -22,12 +22,15 @@ struct FrameworkGridView: View {
                     ForEach(MockData.frameworks) { framework in
                         FrameworkTitleView(framework: framework)
                             .onTapGesture {
-                                print("tapped \(framework.name)")
+                                viewModel.selectedFramework = framework
                             }
                     }
                 }
             }
             .navigationTitle("🍏 Frameworks")
+            .sheet(isPresented: $viewModel.isShowingDetailView) {
+                FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework)
+            }
         }
     }
 }

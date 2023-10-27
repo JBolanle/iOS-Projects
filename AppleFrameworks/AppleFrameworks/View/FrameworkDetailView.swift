@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     @Environment(\.dismiss) private var dismiss
-//    @State private var isSheetPresented = true
 
     let framework: Framework
 
@@ -33,9 +32,11 @@ struct FrameworkDetailView: View {
             Spacer()
             FrameworkTitleView(framework: framework)
 
-            Text(framework.description)
-                .font(.body)
+            ScrollView {
+                Text(framework.description)
+                    .font(.body)
                 .padding()
+            }
             Spacer()
 
             Button {
