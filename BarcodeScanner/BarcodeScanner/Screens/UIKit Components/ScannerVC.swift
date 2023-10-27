@@ -14,7 +14,7 @@ enum CameraError: String {
 }
 
 protocol ScannerVCDelegate: AnyObject {
-    func didFind(bardode: String)
+    func didFind(barcode: String)
     func didSurface(error: CameraError)
 }
 
@@ -32,6 +32,22 @@ final class ScannerVC: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCameraSession()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        guard let previewLayer = previewLayer else {
+            scannerDelegate?.didSurface(error: .invalidDeviceInput)
+            return
+        }
+
+        previewLayer.frame = view.layer.bounds
     }
 
     private func setupCameraSession() {
@@ -93,6 +109,7 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
             return
         }
 
-        scannerDelegate?.didFind(bardode: barcode)
+        captureSession.stopRunning()
+        scannerDelegate?.didFind(barcode: barcode)
     }
 }

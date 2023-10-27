@@ -12,6 +12,7 @@
 		2CEC168B2AEBFBAE00CA4F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC168A2AEBFBAE00CA4F3D /* Assets.xcassets */; };
 		2CEC168E2AEBFBAE00CA4F3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC168D2AEBFBAE00CA4F3D /* Preview Assets.xcassets */; };
 		2CEC16972AEC062E00CA4F3D /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC16962AEC062E00CA4F3D /* ScannerVC.swift */; };
+		2CEC169B2AEC2C4400CA4F3D /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC169A2AEC2C4400CA4F3D /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2CEC168A2AEBFBAE00CA4F3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CEC168D2AEBFBAE00CA4F3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CEC16962AEC062E00CA4F3D /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		2CEC169A2AEC2C4400CA4F3D /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		2CEC16952AEBFC0600CA4F3D /* BarcodeScannerView */ = {
 			isa = PBXGroup;
 			children = (
+				2CEC169A2AEC2C4400CA4F3D /* ScannerView.swift */,
 				2CEC16882AEBFBAB00CA4F3D /* BarcodeScannerView.swift */,
 			);
 			path = BarcodeScannerView;
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CEC16972AEC062E00CA4F3D /* ScannerVC.swift in Sources */,
+				2CEC169B2AEC2C4400CA4F3D /* ScannerView.swift in Sources */,
 				2CEC16892AEBFBAB00CA4F3D /* BarcodeScannerView.swift in Sources */,
 				2CEC16872AEBFBAB00CA4F3D /* BarcodeScannerApp.swift in Sources */,
 			);
