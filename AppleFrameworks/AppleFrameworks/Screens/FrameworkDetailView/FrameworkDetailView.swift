@@ -8,28 +8,15 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-    @Environment(\.dismiss) private var dismiss
+    @State private var isShowingSafariView = false
 
     let framework: Framework
 
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "xmark")
-                        .frame(width: 44, height: 44)
-                        .foregroundColor(Color(.label))
-                        .background(Color.secondary)
-                        .imageScale(.large)
-                        .cornerRadius(100)
-                }
-            }
-            .padding()
-
+            XDismissButton()
             Spacer()
+            
             FrameworkTitleView(framework: framework)
 
             ScrollView {
@@ -40,18 +27,21 @@ struct FrameworkDetailView: View {
             Spacer()
 
             Button {
-                //
+                isShowingSafariView = true
             } label: {
                 AFButton(title: "Learn More")
             }
         }
         .padding()
-        .navigationTitle(framework.name)
+        .fullScreenCover(isPresented: $isShowingSafariView) {
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "http://www.apple.com")!)
+        }
     }
 }
 
 #Preview {
     FrameworkDetailView(framework: MockData.sampleFramework)
 }
+
 
 
