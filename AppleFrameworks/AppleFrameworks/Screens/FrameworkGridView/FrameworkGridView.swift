@@ -35,8 +35,7 @@ struct FrameworkGridView: View {
                                     } label: {
                                             Image(systemName: "list.bullet")
                                             .foregroundStyle(.white)
-                                    }
-                                }
+                                    }                                }
                 } else {
                     List {
                         ForEach(MockData.frameworks) { framework in
@@ -56,6 +55,7 @@ struct FrameworkGridView: View {
                     }
                 }
             }
+            .accentColor(Color(.label))
         }
     }
 }
