@@ -33,7 +33,7 @@ struct FrameworkGridView: View {
                                         isGridView.toggle()
                                     } label: {
                                             Image(systemName: "list.bullet")
-                                            .foregroundStyle(.white)
+                                            .accentColor(Color(.label))
                                     }                                }
                 } else {
                     List {
@@ -49,7 +49,7 @@ struct FrameworkGridView: View {
                             isGridView.toggle()
                         } label: {
                                 Image(systemName: "square.grid.2x2")
-                                .foregroundStyle(.white)
+                                .accentColor(Color(.label))
                         }
                     }
                 }
