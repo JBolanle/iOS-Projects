@@ -7,6 +7,8 @@
 
 import SwiftUI
 
-class FrameworkGridViewModel: ObservedObject {
+final class FrameworkGridViewModel: ObservableObject {
+    var selectedFramework: Framework?
     
+
 }
