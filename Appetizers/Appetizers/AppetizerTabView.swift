@@ -13,6 +13,7 @@ struct AppetizerTabView: View {
             AppetizerListView()
                 .tabItem {
                     Image(systemName: "house")
+
                     Text("Home")
                 }
 

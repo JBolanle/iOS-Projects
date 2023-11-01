@@ -19,6 +19,7 @@
 		2CEC16CE2AEF841400CA4F3D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC16CD2AEF841400CA4F3D /* NetworkManager.swift */; };
 		2CEC16D02AEF84FE00CA4F3D /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC16CF2AEF84FE00CA4F3D /* APError.swift */; };
 		2CEC16D32AF039A800CA4F3D /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC16D22AF039A800CA4F3D /* AppetizerListViewModel.swift */; };
+		2CEC16D52AF1CE2300CA4F3D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC16D42AF1CE2300CA4F3D /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2CEC16CD2AEF841400CA4F3D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2CEC16CF2AEF84FE00CA4F3D /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		2CEC16D22AF039A800CA4F3D /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		2CEC16D42AF1CE2300CA4F3D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		2CEC16CC2AEF83E800CA4F3D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2CEC16D42AF1CE2300CA4F3D /* Alert.swift */,
 				2CEC16CD2AEF841400CA4F3D /* NetworkManager.swift */,
 				2CEC16CF2AEF84FE00CA4F3D /* APError.swift */,
 			);
@@ -233,6 +236,7 @@
 				2CEC16C72AEF7CC600CA4F3D /* AppetizerListItem.swift in Sources */,
 				2CEC16CE2AEF841400CA4F3D /* NetworkManager.swift in Sources */,
 				2CEC16AF2AEF57CE00CA4F3D /* AppetizersApp.swift in Sources */,
+				2CEC16D52AF1CE2300CA4F3D /* Alert.swift in Sources */,
 				2CEC16BD2AEF580D00CA4F3D /* AppetizerListView.swift in Sources */,
 				2CEC16C12AEF581700CA4F3D /* OrderView.swift in Sources */,
 			);
