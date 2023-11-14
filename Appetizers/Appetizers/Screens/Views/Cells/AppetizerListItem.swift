@@ -12,12 +12,7 @@ struct AppetizerListItem: View {
 
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
-                image.resizable()
-                
-            } placeholder: {
-                ProgressView()
-            }
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)
