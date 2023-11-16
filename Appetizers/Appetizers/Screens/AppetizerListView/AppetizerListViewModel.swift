@@ -14,6 +14,7 @@ final class AppetizerListViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var isShowingDetail = false
     @Published var selectedAppetizer: Appetizer?
+//    @Published var cart: [Appetizer] = []
 
     func getAppetizers() {
         isLoading = true
@@ -39,6 +40,10 @@ final class AppetizerListViewModel: ObservableObject {
                 }
             }
         }
+    }
+
+    func loadCart() {
+        return
     }
 
 }
