@@ -64,6 +64,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C33BED82B05FA200093DA22 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CEC16AE2AEF57CE00CA4F3D /* AppetizersApp.swift */,
+				2C33BED92B05FA350093DA22 /* Core */,
+				2CEC16CC2AEF83E800CA4F3D /* Utilities */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C33BED92B05FA350093DA22 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2CEC16C22AEF581F00CA4F3D /* Views */,
+				2CEC16C82AEF7E8E00CA4F3D /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2C33BEDA2B05FA4C0093DA22 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2CEC16B02AEF57CE00CA4F3D /* AppetizerTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		2CC769852B02C793000C452B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,11 +175,7 @@
 		2CEC16AD2AEF57CE00CA4F3D /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
-				2CEC16AE2AEF57CE00CA4F3D /* AppetizersApp.swift */,
-				2CEC16B02AEF57CE00CA4F3D /* AppetizerTabView.swift */,
-				2CEC16CC2AEF83E800CA4F3D /* Utilities */,
-				2CEC16C82AEF7E8E00CA4F3D /* Model */,
-				2CEC16C32AEF582500CA4F3D /* Screens */,
+				2C33BED82B05FA200093DA22 /* App */,
 				2CEC16B22AEF57D000CA4F3D /* Assets.xcassets */,
 				2CEC16B42AEF57D000CA4F3D /* Preview Content */,
 			);
@@ -170,23 +193,15 @@
 		2CEC16C22AEF581F00CA4F3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2C33BEDA2B05FA4C0093DA22 /* Main */,
+				2CEC16D12AF0399700CA4F3D /* AppetizerListView */,
+				2CEC16CB2AEF7EFC00CA4F3D /* OrderView */,
+				2CEC16CA2AEF7EF600CA4F3D /* AccountView */,
 				2CC7698E2B02C906000C452B /* Buttons */,
-				2CC7698A2B02C81A000C452B /* Image */,
 				2CC769892B02C808000C452B /* Cells */,
 				2CC769882B02C7FF000C452B /* UIKit Components */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		2CEC16C32AEF582500CA4F3D /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				2CEC16D12AF0399700CA4F3D /* AppetizerListView */,
-				2CEC16CB2AEF7EFC00CA4F3D /* OrderView */,
-				2CEC16CA2AEF7EF600CA4F3D /* AccountView */,
-				2CEC16C22AEF581F00CA4F3D /* Views */,
-			);
-			path = Screens;
 			sourceTree = "<group>";
 		};
 		2CEC16C82AEF7E8E00CA4F3D /* Model */ = {
@@ -218,6 +233,7 @@
 		2CEC16CC2AEF83E800CA4F3D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2CC7698A2B02C81A000C452B /* Image */,
 				2CC769872B02C7A7000C452B /* Alerts */,
 				2CC769862B02C79A000C452B /* Managers */,
 				2CC769852B02C793000C452B /* Extensions */,
