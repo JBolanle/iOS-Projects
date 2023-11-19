@@ -8,40 +8,44 @@
 import SwiftUI
 
 struct OrderView: View {
-    let appetizer: Appetizer
-    @State private var orderItems = MockData.orderItems
+
+    @EnvironmentObject var order: Order
 
     var body: some View {
         NavigationStack {
-            VStack {
-                List {
-                    ForEach(orderItems) { appetizer in
-                        AppetizerListItem(appetizer: appetizer)
+            ZStack {
+                VStack {
+                    List {
+                        ForEach(order.orderItems) { appetizer in
+                            AppetizerListItem(appetizer: appetizer)
+                        }
+                        .onDelete(perform: order.deleteItems)
                     }
-                    .onDelete(perform: deleteItems)
-                }
-                .listStyle(PlainListStyle())
+                    .listStyle(PlainListStyle())
 
-                Button("$??? - Place Order", action: {
-                    //
-                })
-                .font(.title3)
-                .fontWeight(.semibold)
-                .buttonStyle(.bordered)
-                .controlSize(.large)
-                .buttonBorderShape(.roundedRectangle(radius: 10))
-                .tint(.brandPrimary)
-                .padding(.bottom, 25)
+                    Button("$\(order.totalCost, specifier: "%.2f") - Place Order", action: {
+                        //
+                    })
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .buttonStyle(.bordered)
+                    .controlSize(.large)
+                    .buttonBorderShape(.roundedRectangle(radius: 10))
+                    .tint(.brandPrimary)
+                    .padding(.bottom, 25)
+                }
+
+                if order.orderItems.isEmpty {
+                    EmptyState(imageName: "empty-order", message: "You have no items in your order.\nPlease add an appetizer.")
+                }
             }
             .navigationTitle("🧾 Order")
         }
     }
 
-    func deleteItems(at offsets: IndexSet) {
-        orderItems.remove(atOffsets: offsets)
-    }
+    
 }
 
 #Preview {
-    OrderView(appetizer: MockData.sampleAppetizer)
+    OrderView()
 }

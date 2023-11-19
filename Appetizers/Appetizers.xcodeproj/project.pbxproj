@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C33BEDD2B0809EE0093DA22 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33BEDC2B0809EE0093DA22 /* EmptyState.swift */; };
 		2C46C0402B0592E100655D1A /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46C03F2B0592E100655D1A /* AccountViewModel.swift */; };
 		2C46C0422B05943A00655D1A /* String Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46C0412B05943A00655D1A /* String Extensions.swift */; };
 		2C46C0442B05995A00655D1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46C0432B05995A00655D1A /* User.swift */; };
+		2C9EBA092B0814180077CA30 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9EBA082B0814180077CA30 /* Order.swift */; };
 		2CC769842B02C068000C452B /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC769832B02C068000C452B /* RemoteImage.swift */; };
 		2CC7698D2B02C8E1000C452B /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7698C2B02C8E1000C452B /* AppetizerDetailView.swift */; };
 		2CE2B9052B03E40A00C2B286 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE2B9042B03E40A00C2B286 /* XDismissButton.swift */; };
@@ -30,9 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C33BEDC2B0809EE0093DA22 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		2C46C03F2B0592E100655D1A /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2C46C0412B05943A00655D1A /* String Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String Extensions.swift"; sourceTree = "<group>"; };
 		2C46C0432B05995A00655D1A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C9EBA082B0814180077CA30 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2CC769832B02C068000C452B /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		2CC7698C2B02C8E1000C452B /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		2CE2B9042B03E40A00C2B286 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
@@ -89,6 +93,14 @@
 				2CEC16B02AEF57CE00CA4F3D /* AppetizerTabView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		2C33BEDB2B0808CB0093DA22 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				2C33BEDC2B0809EE0093DA22 /* EmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 		2CC769852B02C793000C452B /* Extensions */ = {
@@ -193,6 +205,7 @@
 		2CEC16C22AEF581F00CA4F3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2C33BEDB2B0808CB0093DA22 /* Empty States */,
 				2C33BEDA2B05FA4C0093DA22 /* Main */,
 				2CEC16D12AF0399700CA4F3D /* AppetizerListView */,
 				2CEC16CB2AEF7EFC00CA4F3D /* OrderView */,
@@ -209,6 +222,7 @@
 			children = (
 				2CEC16C42AEF63E600CA4F3D /* Appetizer.swift */,
 				2C46C0432B05995A00655D1A /* User.swift */,
+				2C9EBA082B0814180077CA30 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,12 +337,14 @@
 			files = (
 				2CEC16C52AEF63E600CA4F3D /* Appetizer.swift in Sources */,
 				2CEC16D02AEF84FE00CA4F3D /* APError.swift in Sources */,
+				2C9EBA092B0814180077CA30 /* Order.swift in Sources */,
 				2CEC16BF2AEF581300CA4F3D /* AccountView.swift in Sources */,
 				2CEC16D32AF039A800CA4F3D /* AppetizerListViewModel.swift in Sources */,
 				2CEC16B12AEF57CE00CA4F3D /* AppetizerTabView.swift in Sources */,
 				2CEC16D72AF5991F00CA4F3D /* LoadingView.swift in Sources */,
 				2C46C0422B05943A00655D1A /* String Extensions.swift in Sources */,
 				2CC769842B02C068000C452B /* RemoteImage.swift in Sources */,
+				2C33BEDD2B0809EE0093DA22 /* EmptyState.swift in Sources */,
 				2CEC16C72AEF7CC600CA4F3D /* AppetizerListItem.swift in Sources */,
 				2CC7698D2B02C8E1000C452B /* AppetizerDetailView.swift in Sources */,
 				2CEC16CE2AEF841400CA4F3D /* NetworkManager.swift in Sources */,
