@@ -15,9 +15,18 @@ struct AppetizerDetailView: View {
 
     var body: some View {
         VStack {
-            AppetizerRemoteImage(urlString: appetizer.imageURL)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 320, height: 225)
+            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 320, height: 225)
+            } placeholder: {
+                Image("food-placeholder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 320, height: 225)
+            }
+
 
             Text(appetizer.name)
                 .font(.title)
@@ -45,12 +54,8 @@ struct AppetizerDetailView: View {
             } label: {
                 Text("$\(appetizer.price, specifier: "%.2f") - Add to Order")
             }
-            .font(.title3)
-            .fontWeight(.semibold)
-            .buttonStyle(.bordered)
-            .controlSize(.large)
-            .buttonBorderShape(.roundedRectangle(radius: 10))
-            .tint(.brandPrimary)
+//            .modifier(StandardButtonStyle())
+            .standardButtonStyle()
             .padding(.bottom)
         }
         .frame(width: 300, height: 525)

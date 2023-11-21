@@ -17,7 +17,7 @@ struct OrderView: View {
                 VStack {
                     List {
                         ForEach(order.orderItems) { appetizer in
-                            AppetizerListItem(appetizer: appetizer)
+                            AppetizerListCell(appetizer: appetizer)
                         }
                         .onDelete(perform: order.deleteItems)
                     }
@@ -26,12 +26,7 @@ struct OrderView: View {
                     Button("$\(order.totalCost, specifier: "%.2f") - Place Order", action: {
                         //
                     })
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .buttonStyle(.bordered)
-                    .controlSize(.large)
-                    .buttonBorderShape(.roundedRectangle(radius: 10))
-                    .tint(.brandPrimary)
+                    .modifier(StandardButtonStyle())
                     .padding(.bottom, 25)
                 }
 
@@ -44,8 +39,4 @@ struct OrderView: View {
     }
 
     
-}
-
-#Preview {
-    OrderView()
 }

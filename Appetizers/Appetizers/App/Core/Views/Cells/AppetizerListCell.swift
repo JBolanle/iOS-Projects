@@ -7,22 +7,26 @@
 
 import SwiftUI
 
-struct AppetizerListItem: View {
+struct AppetizerListCell: View {
     let appetizer: Appetizer
-
+    
     var body: some View {
         HStack {
-            AppetizerRemoteImage(urlString: appetizer.imageURL)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 120, height: 90)
-                .cornerRadius(8)
-
+            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
+                image
+                    .cellImageStyle()
+            } placeholder: {
+                Image("food-placeholder")
+                    .cellImageStyle()
+            }
+            
+            
             VStack(alignment: .leading, spacing: 5) {
                 Text(appetizer.name)
                     .font(.title2)
                     .fontWeight(.medium)
                     .fontDesign(.rounded)
-
+                
                 Text(String("$\(appetizer.price)"))
                     .foregroundStyle(.secondary)
                     .fontDesign(.rounded)
@@ -34,5 +38,5 @@ struct AppetizerListItem: View {
 }
 
 #Preview {
-    AppetizerListItem(appetizer: MockData.sampleAppetizer)
+    AppetizerListCell(appetizer: MockData.sampleAppetizer)
 }
