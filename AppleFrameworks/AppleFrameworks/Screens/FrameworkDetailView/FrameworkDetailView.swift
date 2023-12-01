@@ -26,6 +26,18 @@ struct FrameworkDetailView: View {
             }
             Spacer()
 
+            Link(destination: URL(string: framework.urlString)!, label: {
+                Button {
+                    //
+                } label: {
+                    Label("Learn More", systemImage: "book.fill")
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.large)
+                .buttonBorderShape(.roundedRectangle(radius: 20))
+                .tint(.green)
+            })
+
             Button {
                 isShowingSafariView = true
             } label: {
@@ -40,7 +52,7 @@ struct FrameworkDetailView: View {
         }
         .padding()
         .fullScreenCover(isPresented: $isShowingSafariView) {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "http://www.apple.com")!)
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "http://developer.apple.com")!)
         }
     }
 }
